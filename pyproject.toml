@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "openedx-ibl-api-poc-1"
+version = "0.1.0"
+description = "A proof of concept project to address the Open edX task of the IBL Platform Test IV"
+authors = ["Kevin Boehm <kmbhm1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "openedx_ibl_api_poc_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = ">=4.1,<4.2"
+authlib = ">=1.1.0,<1.2.0"
+requests = ">=2.28.1,<=2.29.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
